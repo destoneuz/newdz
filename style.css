@@ -302,10 +302,6 @@ body {
     line-height: 20px;
 }
 
-.change.positive {
-    color: #06B470;
-}
-
 .price {
     width: 134px;
     height: 32px;
@@ -364,16 +360,17 @@ body {
     border-width: 1px;
 }
 .value-graphic {
-    width: 1590px;
-    height: 390;
+    width: calc(100% - 330px)    
+    height: 390px;
     gap: 30px;
-    padding-left: 165px;
     display: flex;
-    flex-wrap: wrap;
-
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 165px;
+    padding-right: 165px;
 }
 .bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
-    display: flex;
     width: 240px;
     height: 390px;
     padding-top: 40px;
@@ -422,6 +419,7 @@ body {
     font-size: 20px;
     line-height: 32px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .growthbtc {
@@ -460,4 +458,245 @@ body {
 }
 .dontpositive {
     color: #F74E2C;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+.dgd {
+    width: 240px;
+    height: 390px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1E1F25;
+}
+.coin-dgd {
+    letter-spacing: 0px;
+    margin: 12px 0 0;
+    width: 180px;
+    height: 32px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+.ethos {
+    width: 240px;
+    height: 390px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1E1F25;
+}
+.coin-ethos {
+    letter-spacing: 0px;
+    margin: 12px 0 0;
+    width: 180px;
+    height: 32px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+.kmd {
+    width: 240px;
+    height: 390px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1E1F25;
+}
+.coin-kmd {
+    letter-spacing: 0px;
+    margin: 12px 0 0;
+    width: 180px;
+    height: 32px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+.etp {
+    width: 240px;
+    height: 390px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1E1F25;
+}
+.coin-etp {
+    letter-spacing: 0px;
+    margin: 12px 0 0;
+    width: 180px;
+    height: 32px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+.see-all-button-container {
+    padding-top: 60px;
+    padding-left: 675px;
+    padding-right: 675px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.see-all-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    width: 240px;
+    height: 56px;
+    background: #1B70F1;
+    border-radius: 4px;
+    border: none;
+}
+
+.see-all-button:hover {
+    background: #155ccd;
+}
+
+.button-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.start-trading {
+    width: 1920px;   
+    height: 933px;
+    padding-top: 120px;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+.start-trading-text {
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 700;
+font-size: 58px;
+line-height: 73px;
+text-align: center;
+color: #FFFFFF;
+padding-top: 120px;
+}
+.start-trading-par {
+font-family: "Source Sans 3";
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: center;
+color: #ADB3BF;
+}
+.st-vector-line {
+    width: 100%;
+    height: 1px;
+    margin-top: 60px;
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0.04) 0%, rgba(255, 255, 255, 0.2) 48.42%, rgba(255, 255, 255, 0.04) 100%); /* Градиент */
+    border-image-slice: 1;
+}
+.cvas {
+    height: 1590px;
+    width: 414px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding-left: 165px;
+    padding-right: 165px;
+}
+.create-account {
+    width: 375px;
+    height: 414px;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #1E1F25;
+    background-color: #272A34;
+    padding: 60px 30px;
+    gap: 40px;
+}
+.create-acc-h2{
+    letter-spacing: 0px;
+    margin: 12px 0 0;
+    width: 180px;
+    height: 32px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+}
+.create-acc-span {
+width: 278px;
+height: 48px;
+font-family: 'Source Sans 3';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+color: #ADB3BF;
+
+}
+.create-acc-btn {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 13px 26px;
+gap: 8px;
+}
+.button-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+}
+.create-acc-text-btn {
+font-family: "Source Sans 3";
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+letter-spacing: 0px;
 }
