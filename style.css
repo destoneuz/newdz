@@ -20,12 +20,20 @@
 }
 
 body {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: #07162e;
+    background-color: #131517;
     position: relative;
     overflow: auto;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+}
+
+main {
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .navbar {
@@ -37,12 +45,11 @@ body {
     padding: 1rem 2rem;
     background-color: rgba(30, 31, 37, 0.9);
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.logo {
-    padding-left: 165px;
-    display: flex;
-    align-items: center;
+.navbar .logo {
+    margin-left: 165px;
 }
 
 .divider-line {
@@ -116,13 +123,12 @@ body {
 .main-content {
     flex: 1;
     position: relative;
-    height: calc(100vh - 56px);
 }
 
 .hero-section {
     width: 100%;
     position: relative;
-    height: 100%;
+    height: 690px;
 }
 
 .hero-text {
@@ -355,7 +361,7 @@ body {
     height: 1px;
     background-color: #6c6c6c;
     border: none;
-    margin: 30px auto;
+    margin: 60px auto;
     width: 1590;
     border-width: 1px;
 }
@@ -563,8 +569,8 @@ body {
 }
 .see-all-button-container {
     padding-top: 60px;
-    padding-left: 875px;
-    padding-right: 875px;
+    display: flex;
+    justify-content: center;
     width: 100%;
     box-sizing: border-box;
 }
@@ -594,41 +600,35 @@ body {
     color: #FFFFFF;
 }
 .start-trading {
-    width: 1050px;
-    height: 159px;
-    gap: 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 120px;
-    padding-left: 165px;
-    padding-right: 165px;
 }
 .start-trading-text {
     width: 794px;
     height: 73px;
-font-family: 'Source Sans 3';
-font-style: normal;
-font-weight: 700;
-font-size: 58px;
-line-height: 73px;
-text-align: center;
-color: #FFFFFF;
-text-wrap: nowrap;
-padding-left: 435px;
-padding-right: 435px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+    text-align: center;
+    color: #FFFFFF;
+    text-wrap: nowrap;
 }
 .start-trading-par {
     width: 1050px;
     height: 56px;
-font-family: "Source Sans 3";
-font-weight: 400;
-font-size: 18px;
-line-height: 28px;
-letter-spacing: 0px;
-text-align: center;
-color: #ADB3BF;
-display: flex;
-padding-left: 435px;
-padding-right: 435px;
-text-wrap: nowrap;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ADB3BF;
+    text-wrap: nowrap;
 }
 .st-vector-line {
     width: 1590px;
@@ -922,3 +922,2202 @@ line-height: 24px;
 text-align: center;
 color: #000000;
 }
+.choose-cryptopage{
+    width: 1920;
+    height: 919;
+    margin-top: 120px;
+    
+}
+.why-choosetext {
+    width: 794px;
+    height: 73px;
+    font-family: 'Source Sans 3';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-wrap: nowrap;
+    padding-left: 435px;
+    padding-right: 435px;
+}
+.why-choosepar {
+    width: 1050px;
+    height: 56px;
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ADB3BF;
+    display: flex;
+    padding-left: 435px;
+    padding-right: 435px;
+    text-wrap: nowrap;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin-left: 165px;
+    margin-top: 60px;
+    position: relative;
+}
+
+.illustration {
+    position: absolute;
+    right: -750px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 600px;
+    height: auto;
+}
+
+.illustration img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.feature-item {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.feature-item:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.feature-left {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.feature-number {
+    font-family: "Source Sans 3";
+    font-size: 58px;
+    line-height: 1;
+    color: rgba(255, 255, 255, 0.1);
+    font-weight: 700;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-content h3 {
+    margin: 0;
+    color: #fff;
+    font-family: "Source Sans 3";
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.feature-content p {
+    margin: 0;
+    color: #ADB3BF;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 400px;
+}
+
+.feature-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.feature-link:hover {
+    color: #1B70F1;
+}
+
+.feature-par {
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0px;
+
+}
+.what-traderssay {
+    margin-top: 100px;
+    padding: 0 50px;
+  }
+  
+  .text-row {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 1590px;
+    height: 146px;
+    gap: 30px;
+    align-items: baseline;
+  }
+  
+  .text-row h3 {
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+    color: white;
+    margin: 0;
+    width: 645px;
+    height: 146px;
+  }
+  
+  .text-row p {
+    width: 915px;
+    height: 56px;   
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ADB3BF;
+    margin: 0;
+  }
+  .traders-cards {
+    margin-top: 60px;
+    width: 1590px;
+    height: 381px;
+    gap: 51px;
+  }
+  .card-slider {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    position: relative;
+    scrollbar-width: none;
+    overflow: hidden;
+  }
+
+  .card-slider .card {
+    position: relative;
+    flex: 0 0 auto;
+    width: 645px;
+    height: 326px;
+    border-radius: 7px;
+    padding: 40px 30px;
+    background-color: #2a2f3a;
+    color: white;
+    font-size: 24px;
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card-slider .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .card .avatar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+  }
+  
+  .card .user-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .card .username {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FFFFFF;
+  }
+  
+  .card .user-title {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #ADB3BF;
+  }
+  
+  .card .testimonial-text {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ADB3BF;
+    flex-grow: 1;
+    margin-top: 30px;
+  }
+
+  
+  .indicator-bar {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .bar {
+    width: 30px;
+    height: 6px;
+    background-color: #aaa;
+    border-radius: 3px;
+    transition: background 0.3s;
+  }
+
+.card .quote-icon {
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    top: 40px;
+    right: 30px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card .quote-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #1B70F1;
+}
+
+.download-app {
+    display: flex;
+    padding: 120px 165px;
+    background-color: #131517;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.download-content {
+    max-width: 600px;
+    flex: 0 0 50%;
+    padding-top: 60px;
+}
+
+.download-content h2 {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.download-content p {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #ADB3BF;
+    margin-bottom: 40px;
+    max-width: 550px;
+}
+
+.download-buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.store-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #1E1F25;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 16px 20px;
+}
+
+.app-store, .play-store {
+    width: 180px;
+    height: 56px;
+}
+
+.qr-code {
+    width: 80px;
+    height: 56px;
+    padding: 16px;
+}
+
+.store-button img {
+    width: 24px;
+    height: 24px;
+}
+
+.store-button span {
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #FFFFFF;
+}
+
+.store-button:hover {
+    background: #2a2b33;
+}
+
+@media screen and (max-width: 1600px) {
+    .desktop-image {
+        max-width: 600px;
+    }
+    
+    .phone-image {
+        width: 240px;
+        right: 480px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .download-app {
+        flex-direction: column;
+        padding: 60px 20px;
+        align-items: center;
+    }
+    
+    .download-content {
+        max-width: 100%;
+        flex: 0 0 100%;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 0;
+    }
+    
+    .download-buttons {
+        justify-content: center;
+    }
+    
+    .app-images-container {
+        width: 100%;
+        height: 400px;
+        justify-content: flex-end;
+    }
+    
+    .desktop-image {
+        max-width: 500px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .phone-image {
+        width: 200px;
+        right: 400px;
+        top: 80px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .app-images-container {
+        height: 300px;
+    }
+    
+    .desktop-image {
+        max-width: 350px;
+        right: 0;
+    }
+    
+    .phone-image {
+        width: 150px;
+        right: 280px;
+        top: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app-images-container {
+        justify-content: flex-end;
+        overflow: visible;
+        height: 250px;
+    }
+    
+    .desktop-image {
+        max-width: 280px;
+        right: 0;
+    }
+    
+    .phone-image {
+        width: 120px;
+        right: 220px;
+        top: 50px;
+    }
+}
+
+.faq-page {
+    max-width: 1590px;
+    margin: 120px auto;
+    padding: 0;
+}
+
+.h1-faq {
+    font-family: "Source Sans 3";
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 73px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #ADB3BF;
+    margin-bottom: 60px;
+}
+
+.faq {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.faq-column {
+    width: 780px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.faq-item {
+    background: #272A34;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 40px 30px;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    transition: height 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.faq-item.active {
+    height: 180px;
+}
+
+.faq-question {
+    font-family: "Source Sans 3";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    text-align: left;
+    padding-right: 40px;
+    text-wrap: nowrap;
+}
+
+.faq-answer {
+    font-family: "Source Sans 3";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADB3BF;
+    margin-top: 20px;
+    display: none;
+    text-align: left;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.close-btn, .plus {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    color: #FFFFFF;
+    font-size: 24px;
+    cursor: pointer;
+}
+.close-btn {
+    display: none;
+}
+
+.faq-item.active .close-btn {
+    display: block;
+}
+
+.faq-item.active .plus {
+    display: none;
+}
+
+.question-faqh1 {
+    font-family: "Source Sans 3";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0px;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    background-color: #131517;
+    padding: 120px 165px 40px;
+    color: #FFFFFF;
+    margin-top: auto;
+}
+
+.footer-content {
+    max-width: 1590px;
+    margin: 0 auto;
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 30px;
+    margin-bottom: 120px;
+}
+
+.footer-column h4 {
+    font-family: 'Source Sans 3';
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 20px;
+}
+
+.footer-column ul li a {
+    font-family: 'Source Sans 3';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADB3BF;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #131517;
+}
+
+.hiring-badge {
+    background: rgba(27, 112, 241, 0.1);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+    color: #1B70F1;
+    margin-left: 8px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.copyright p {
+    font-family: 'Source Sans 3';
+    font-size: 16px;
+    color: #ADB3BF;
+    margin: 0;
+}
+
+.legal-links {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.legal-links a {
+    font-family: 'Source Sans 3';
+    font-size: 16px;
+    color: #ADB3BF;
+    text-decoration: none;
+}
+
+.separator {
+    color: #ADB3BF;
+}
+
+.language-currency {
+    display: flex;
+    gap: 10px;
+}
+
+.language-select, .currency-select {
+    background: #272A34;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    padding: 8px 16px;
+    color: #FFFFFF;
+    font-family: 'Source Sans 3';
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.language-select option, .currency-select option {
+    background: #272A34;
+    color: #FFFFFF;
+}
+
+.top-bar {
+    background-color: #1E1F25;
+    padding: 10px 165px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.community-text {
+    color: #FFFFFF;
+    font-family: 'Source Sans 3';
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: opacity 0.3s ease;
+}
+
+.social-link:hover {
+    opacity: 0.8;
+}
+
+.social-link img {
+    width: 20px;
+    height: 20px;
+}
+
+/* Планшеты (768px - 1024px) */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .navbar .logo {
+        margin-left: 20px;
+    }
+
+    .divider-line {
+        display: none;
+    }
+
+    .nav-links {
+        margin-left: 40px;
+        gap: 15px;
+    }
+
+    .nav-item {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .hero-text {
+        width: auto;
+        left: 40px;
+        top: 120px;
+        padding-right: 40px;
+    }
+
+    .hero-text p {
+        width: auto;
+        max-width: 600px;
+    }
+
+    .BuySellCrypto {
+        font-size: 72px;
+        line-height: 90px;
+    }
+
+    .laptop-svg {
+        width: 500px;
+        height: 500px;
+        margin-left: auto;
+        right: 40px;
+        top: 20px;
+    }
+
+    .crypto-ticker {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+    }
+
+    .market-trends {
+        width: calc(100% - 40px);
+        padding-left: 20px;
+        padding-right: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        height: auto;
+    }
+
+    .trends-navlink {
+        overflow-x: auto;
+        width: 100%;
+        justify-content: flex-start;
+        white-space: nowrap;
+    }
+
+    .value-graphic {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        gap: 20px;
+        overflow-x: auto;
+        justify-content: flex-start;
+        padding-bottom: 20px;
+        height: auto;
+    }
+
+    .button-cards {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        height: auto;
+    }
+
+    .create-account, .verify-account, .add-wallet, .start-trading-card {
+        width: calc(50% - 20px);
+        height: auto;
+        min-height: 370px;
+    }
+
+    .start-trading-text, .why-choosetext {
+        width: 100%;
+        height: auto;
+        font-size: 48px;
+        line-height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .start-trading-par, .why-choosepar {
+        width: 100%;
+        height: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .st-vector-line {
+        width: 100%;
+    }
+
+    .features {
+        margin-left: 20px;
+        width: calc(100% - 40px);
+    }
+
+    .illustration {
+        position: static;
+        transform: none;
+        width: 100%;
+        max-width: 600px;
+        margin: 40px auto;
+        display: block;
+    }
+
+    .what-traderssay .text-row {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        flex-direction: column;
+        gap: 20px;
+        height: auto;
+    }
+
+    .text-row h3, .text-row p {
+        width: 100%;
+        height: auto;
+    }
+
+    .traders-cards {
+        margin-top: 30px;
+        width: calc(100% - 40px);
+        height: auto;
+    }
+
+    .card-slider .card {
+        width: 500px;
+        min-width: 500px;
+    }
+
+    .download-app {
+        padding: 60px 20px;
+        flex-direction: column;
+    }
+
+    .download-content {
+        max-width: 100%;
+    }
+
+    .download-content h2 {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .download-content p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .download-content br {
+        display: none;
+    }
+
+    .app-images-container {
+        position: relative;
+        margin-top: 60px;
+        height: 320px;
+        display: flex;
+        justify-content: right;
+        padding-right: 20px;
+        align-items:center;
+    }
+
+    .desktop-image {
+        width: 100%;
+        max-width: 320px;
+        position: relative;
+        margin: 0;
+        margin-right: 40px;
+    }
+
+    .phone-image {
+        width: 160px;
+        position: absolute;
+        right: 340px;
+        transform: rotate(-3deg);
+        top: 50%;
+    }
+
+    .faq-page {
+        padding: 20px;
+        margin: 40px auto;
+    }
+
+    .h1-faq {
+        font-size: 32px;
+        line-height: 40px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    .faq {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 40px;
+    }
+
+    .faq-column {
+        width: 100%;
+        gap: 15px;
+    }
+
+    .faq-item {
+        padding: 20px;
+        height: auto;
+        min-height: 60px;
+    }
+
+    .faq-item.active {
+        height: auto;
+    }
+
+    .faq-question {
+        font-size: 18px;
+        line-height: 26px;
+        padding-right: 30px;
+    }
+
+    .footer {
+        padding: 40px 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+
+    .legal-links {
+        margin-top: 8px;
+        justify-content: center;
+    }
+
+    .language-currency {
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+/* Мобильные устройства (320px - 767px) */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 12px;
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        justify-content: space-between;
+    }
+
+    .navbar .logo {
+        margin-left: 0;
+    }
+
+    .navbar .logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+
+    .divider-line {
+        display: none;
+    }
+
+    .auth-buttons {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #1E1F25;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        gap: 20px;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease;
+        z-index: 9999;
+    }
+
+    .nav-links.active {
+        display: flex;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+        font-size: 18px;
+    }
+
+    .nav-item:hover {
+        transform: scale(1.05);
+    }
+
+    .hero-section {
+        height: auto;
+        padding-top: 30px;
+        padding-bottom: 250px;
+    }
+
+    .hero-text {
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .company-name {
+        justify-content: center;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .company-name::before {
+        content: '';
+        display: none;
+    }
+
+    .BuySellCrypto {
+        font-size: 32px;
+        line-height: 40px;
+        margin-bottom: 15px;
+        letter-spacing: -0.5px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 22px;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .start-now, .beginners-guide {
+        width: 100%;
+        max-width: 250px;
+        height: 48px;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 10px 20px;
+    }
+
+    .laptop-svg {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        margin: 0;
+        top: 0;
+        display: block;
+    }
+
+    .laptop-svg img {
+        position: relative;
+        width: 100%;
+        max-width: 320px;
+        left: 60%;
+        transform: translateX(-50%);
+        bottom: -250px;
+        top: 50%;
+    }
+
+    .crypto-ticker {
+        margin: 15px;
+        width: calc(100% - 30px);
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        top: 0;
+        height: auto;
+        padding-bottom: 15px;
+    }
+
+    .ticker-item {
+        min-width: 150px;
+        padding: 5px 10px;
+    }
+
+    .pair {
+        font-size: 14px;
+    }
+
+    .change {
+        font-size: 12px;
+    }
+
+    .price {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .market-trends {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .MarketTrendsh1 {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .trends-navlink {
+        overflow-x: auto;
+        padding-bottom: 8px;
+        width: 100%;
+        white-space: nowrap;
+        display: flex;
+        gap: 12px;
+    }
+
+    .trends-navlink .nav-item {
+        font-size: 14px;
+    }
+
+    .gray-line {
+        margin: 20px auto;
+    }
+
+    .value-graphic {
+        margin: 0 15px;
+        padding: 0;
+        gap: 12px;
+        overflow-x: auto;
+        height: auto;
+        width: calc(100% - 30px);
+    }
+
+    .bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
+        min-width: 200px;
+        width: 200px;
+        height: 300px;
+        padding: 12px;
+    }
+
+    .coin-btc, .coin-dgd, .coin-ethos, .coin-kmd, .coin-etp {
+        font-size: 16px;
+        line-height: 24px;
+        margin: 8px 0 0;
+    }
+
+    .see-all-button-container {
+        padding-top: 25px;
+    }
+
+    .start-trading {
+        padding-top: 50px;
+    }
+
+    .start-trading-text, .why-choosetext {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+    }
+
+    .start-trading-par, .why-choosepar {
+        font-size: 12px;
+        line-height: 22px;
+        text-wrap: wrap;
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 0 15px;
+        margin-top: 15px;
+    }
+
+    .button-cards {
+        padding: 15px;
+        gap: 15px;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .create-account, .verify-account, .add-wallet, .start-trading-card {
+        width: 100%;
+        height: auto;
+        min-height: 0;
+        padding: 25px 15px;
+    }
+
+    .create-acc-h2 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .create-acc-span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .create-acc-btn {
+        padding: 10px 20px;
+    }
+
+    .clickable-button-text {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .choose-cryptopage {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .features {
+        margin: 15px;
+        width: calc(100% - 30px);
+    }
+
+    .feature-item {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px 0;
+        align-items: flex-start;
+    }
+
+    .feature-left {
+        width: 100%;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
+    .feature-number {
+        font-size: 36px;
+    }
+
+    .feature-content {
+        width: 100%;
+    }
+
+    .feature-content h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .feature-content p {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 100%;
+    }
+
+    .feature-link {
+        margin-top: 10px;
+        align-self: flex-start;
+        font-size: 16px;
+    }
+
+    .what-traderssay {
+        margin-top: 50px;
+        padding: 0 15px;
+    }
+
+    .text-row {
+        flex-direction: column;
+        gap: 15px;
+        height: auto;
+    }
+
+    .text-row h3 {
+        font-size: 28px;
+        line-height: 36px;
+        width: 100%;
+        height: auto;
+        text-align: left;
+    }
+
+    .text-row p {
+        width: 100%;
+        height: auto;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: left;
+    }
+
+    .traders-cards {
+        margin-top: 30px;
+        width: calc(100% - 30px);
+        height: auto;
+    }
+
+    .card-slider {
+        padding: 0;
+        overflow-x: auto;
+    }
+
+    .card-slider::-webkit-scrollbar {
+        display: none;
+    }
+
+    .card-slider .card {
+        width: 280px;
+        min-width: 280px;
+        height: auto;
+        padding: 20px 15px;
+    }
+
+    .card .card-header {
+        gap: 15px;
+    }
+
+    .card .avatar {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card .username {
+        font-size: 16px;
+    }
+
+    .card .user-title {
+        font-size: 14px;
+    }
+
+    .card .testimonial-text {
+        font-size: 14px;
+        line-height: 22px;
+        margin-top: 15px;
+    }
+
+    .card .quote-icon {
+        width: 50px;
+        height: 50px;
+        top: 20px;
+        right: 15px;
+    }
+
+    .download-app {
+        padding: 30px 15px;
+        flex-direction: column;
+    }
+
+    .download-content h2 {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .download-content p {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .download-buttons {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .store-button {
+        width: 100%;
+        max-width: 240px;
+        padding: 12px 16px;
+    }
+
+    .store-button span {
+        font-size: 16px;
+    }
+
+    .app-images-container {
+        position: relative;
+        margin-top: 40px;
+        height: 280px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .desktop-image {
+        width: 100%;
+        max-width: 280px;
+        position: relative;
+        margin: 0 auto;
+    }
+
+    .phone-image {
+        width: 140px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-130%);
+        top: -10px;
+    }
+
+    .faq-page {
+        padding: 15px;
+        margin: 30px auto;
+    }
+
+    .h1-faq {
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .subtitle {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .faq {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 30px;
+    }
+
+    .faq-column {
+        width: 100%;
+        gap: 12px;
+    }
+
+    .faq-item {
+        padding: 15px;
+        height: auto;
+        min-height: 50px;
+    }
+
+    .faq-item.active {
+        height: auto;
+    }
+
+    .faq-question {
+        font-size: 16px;
+        line-height: 24px;
+        padding-right: 25px;
+        text-wrap: wrap;
+    }
+
+    .faq-answer {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 12px;
+    }
+
+    .close-btn, .plus {
+        right: 15px;
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 30px 15px;
+    }
+
+    .footer-column h4 {
+        font-size: 18px;
+        line-height: 26px;
+        margin-bottom: 20px;
+    }
+
+    .footer-column ul li {
+        margin-bottom: 15px;
+    }
+
+    .footer-column ul li a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .footer-columns {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .copyright {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .copyright p {
+        font-size: 14px;
+    }
+
+    .legal-links {
+        margin-top: 8px;
+        justify-content: center;
+    }
+
+    .language-currency {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .language-select, .currency-select {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Маленькие мобильные устройства (до 375px) */
+@media screen and (max-width: 375px) {
+    .BuySellCrypto {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .MarketTrendsh1, .start-trading-text, .why-choosetext {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .ticker-item {
+        min-width: 140px;
+    }
+
+    .bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
+        min-width: 180px;
+        width: 180px;
+        height: 280px;
+    }
+
+    .feature-number {
+        font-size: 32px;
+    }
+
+    .feature-content h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .feature-content p {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .card-slider .card {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .download-content h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .h1-faq {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .faq-question {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .faq-answer {
+        font-size: 13px;
+        line-height: 19px;
+    }
+
+    .footer-column h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .footer-column ul li a {
+        font-size: 13px;
+        line-height: 19px;
+    }
+}
+
+/* Очень маленькие мобильные устройства (до 320px) */
+@media screen and (max-width: 320px) {
+    .navbar .logo img {
+        width: 100px;
+    }
+
+    .BuySellCrypto {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero-text p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .start-now, .beginners-guide {
+        font-size: 14px;
+        padding: 8px 16px;
+        height: 40px;
+    }
+
+    .MarketTrendsh1, .start-trading-text, .why-choosetext, .h1-faq, .text-row h3 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
+        min-width: 160px;
+        width: 160px;
+        height: 260px;
+        padding: 10px;
+    }
+
+    .coin-btc, .coin-dgd, .coin-ethos, .coin-kmd, .coin-etp {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .price {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .card-slider .card {
+        width: 240px;
+        min-width: 240px;
+        padding: 15px 12px;
+    }
+
+    .card .avatar {
+        width: 40px;
+        height: 40px;
+    }
+
+    .card .username {
+        font-size: 14px;
+    }
+
+    .card .user-title {
+        font-size: 12px;
+    }
+
+    .card .testimonial-text {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .faq-question {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .faq-answer {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.burger-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+.burger-menu.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-menu.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+}
+
+/* Большие мониторы (1920px и выше) */
+@media screen and (min-width: 1920px) {
+    .navbar .logo {
+        margin-left: calc((100% - 1590px) / 2);
+    }
+
+    .hero-text {
+        left: calc((100% - 1590px) / 2);
+    }
+
+    .crypto-ticker {
+        margin-left: calc((100% - 1590px) / 2);
+    }
+
+    .market-trends {
+        padding-left: calc((100% - 1590px) / 2);
+        padding-right: calc((100% - 1590px) / 2);
+    }
+
+    .value-graphic {
+        max-width: 1590px;
+        margin: 0 auto;
+    }
+
+    .button-cards {
+        max-width: 1590px;
+        margin: 0 auto;
+    }
+
+    .features {
+        margin-left: calc((100% - 1590px) / 2);
+    }
+
+    .download-app {
+        padding-left: calc((100% - 1590px) / 2);
+        padding-right: calc((100% - 1590px) / 2);
+    }
+
+    .top-bar {
+        padding-left: calc((100% - 1590px) / 2);
+        padding-right: calc((100% - 1590px) / 2);
+    }
+
+    .footer {
+        padding-left: calc((100% - 1590px) / 2);
+        padding-right: calc((100% - 1590px) / 2);
+    }
+}
+
+/* Мониторы среднего размера (1600px - 1919px) */
+@media screen and (min-width: 1600px) and (max-width: 1919px) {
+    .navbar .logo {
+        margin-left: 120px;
+    }
+
+    .hero-text {
+        left: 120px;
+    }
+
+    .crypto-ticker {
+        margin-left: 120px;
+        width: calc(100% - 240px);
+    }
+
+    .market-trends {
+        width: calc(100% - 240px);
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .value-graphic {
+        width: calc(100% - 240px);
+        margin: 0 120px;
+    }
+
+    .button-cards {
+        width: calc(100% - 240px);
+        margin: 0 120px;
+    }
+
+    .features {
+        margin-left: 120px;
+        width: calc(100% - 240px);
+    }
+
+    .download-app {
+        padding: 120px;
+    }
+
+    .top-bar {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .footer {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+}
+
+/* Мониторы с разрешением 1366px - 1599px */
+@media screen and (min-width: 1366px) and (max-width: 1599px) {
+    .navbar .logo {
+        margin-left: 80px;
+    }
+
+    .hero-text {
+        left: 80px;
+        width: 50%;
+    }
+
+    .crypto-ticker {
+        margin-left: 80px;
+        width: calc(100% - 160px);
+    }
+
+    .market-trends {
+        width: calc(100% - 160px);
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .value-graphic {
+        width: calc(100% - 160px);
+        margin: 0 80px;
+        gap: 20px;
+    }
+
+    .bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
+        width: calc((100% - 100px) / 6);
+    }
+
+    .button-cards {
+        width: calc(100% - 160px);
+        margin: 0 80px;
+        gap: 20px;
+    }
+
+    .create-account, .verify-account, .add-wallet, .start-trading-card {
+        width: calc((100% - 60px) / 4);
+    }
+
+    .features {
+        margin-left: 80px;
+        width: calc(100% - 160px);
+    }
+
+    .download-app {
+        padding: 120px 80px;
+    }
+
+    .download-content {
+        max-width: 45%;
+    }
+
+    .app-images-container {
+        width: 55%;
+    }
+
+    .top-bar {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .footer {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+/* Мониторы с разрешением 1280px - 1365px */
+@media screen and (min-width: 1280px) and (max-width: 1365px) {
+    .navbar .logo {
+        margin-left: 60px;
+    }
+
+    .hero-text {
+        left: 60px;
+        width: 50%;
+    }
+
+    .BuySellCrypto {
+        font-size: 82px;
+        line-height: 100px;
+    }
+
+    .crypto-ticker {
+        margin-left: 60px;
+        width: calc(100% - 120px);
+    }
+
+    .market-trends {
+        width: calc(100% - 120px);
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .value-graphic {
+        width: calc(100% - 120px);
+        margin: 0 60px;
+        gap: 15px;
+    }
+
+    .bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
+        width: calc((100% - 75px) / 6);
+    }
+
+    .button-cards {
+        width: calc(100% - 120px);
+        margin: 0 60px;
+        gap: 15px;
+    }
+
+    .create-account, .verify-account, .add-wallet, .start-trading-card {
+        width: calc((100% - 45px) / 4);
+    }
+
+    .features {
+        margin-left: 60px;
+        width: calc(100% - 120px);
+    }
+
+    .download-app {
+        padding: 100px 60px;
+    }
+
+    .download-content {
+        max-width: 45%;
+    }
+
+    .app-images-container {
+        width: 55%;
+    }
+
+    .top-bar {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    .footer {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+}
+.nav-item {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-item:hover {
+    transform: translateY(-2px);
+}
+
+.start-now, .beginners-guide, .signup-btn, .see-all-button, .create-acc-btn {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.start-now:hover, .signup-btn:hover, .see-all-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(27, 112, 241, 0.3);
+}
+
+.beginners-guide:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.bitcoin, .bts, .dgd, .ethos, .kmd, .etp {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bitcoin:hover, .bts:hover, .dgd:hover, .ethos:hover, .kmd:hover, .etp:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.create-account, .verify-account, .add-wallet, .start-trading-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.create-account:hover, .verify-account:hover, .add-wallet:hover, .start-trading-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 16px rgba(27, 112, 241, 0.15);
+}
+
+.feature-item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feature-item:hover {
+    background-color: rgba(27, 112, 241, 0.05);
+    transform: translateX(10px);
+}
+
+.feature-number {
+    transition: color 0.3s ease;
+}
+
+.feature-item:hover .feature-number {
+    color: rgba(27, 112, 241, 0.3);
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item {
+    transition: height 0.3s ease, background-color 0.3s ease;
+}
+
+.faq-item:hover {
+    background-color: #2d3039;
+}
+
+.faq-answer {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    transform: translateY(-10px);
+}
+
+.faq-item.active .faq-answer {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.store-button {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.store-button:hover {
+    transform: translateY(-3px);
+    background-color: #272a34;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.footer-column ul li a {
+    transition: color 0.3s ease, transform 0.3s ease;
+    display: inline-block;
+}
+
+.footer-column ul li a:hover {
+    color: #1B70F1;
+    transform: translateX(5px);
+}
+
+.social-link {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-link:hover {
+    transform: translateY(-3px);
+    opacity: 0.8;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-text {
+    animation: fadeInUp 1s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.ticker-item {
+    animation: slideIn 0.5s ease-out;
+}
+
+@keyframes growthAnimation {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.growthbtc {
+    transform-origin: left;
+    animation: growthAnimation 1s ease-out;
+}
+
+
+.nav-links.active {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+} 
